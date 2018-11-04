@@ -16,5 +16,6 @@ brew bundle
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo "Creating .zshrc symlink"
-ln -s ./.zshrc ~/.zshrc
+rm ~/.zshrc
+cp ./.zshrc ~/.zshrc
+cp ./.tetris_aliases ~/.tetris_aliases
