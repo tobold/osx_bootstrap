@@ -19,3 +19,5 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 rm ~/.zshrc
 cp ./.zshrc ~/.zshrc
 cp ./.tetris_aliases ~/.tetris_aliases
+
+"UseKeychain yes" > ~/.ssh/config
