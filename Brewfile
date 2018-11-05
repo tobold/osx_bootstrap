@@ -8,6 +8,7 @@ brew "httpie"
 brew "yarn"
 brew "vim"
 brew "blackbox"
+brew "docker"
 
 cask '1password'
 cask 'discord'
