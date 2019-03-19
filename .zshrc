@@ -105,4 +105,6 @@ source ~/.tetris_aliases
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc'; fi
 
+# enable conda (installed through brew cask install miniconda)
+if [ -f '/usr/local/miniconda3/bin/conda' ]; then alias conda='/usr/local/miniconda3/bin/conda'; fi
 #end
