@@ -105,6 +105,26 @@ source ~/.tetris_aliases
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc'; fi
 
-# enable conda (installed through brew cask install miniconda)
-if [ -f '/usr/local/miniconda3/bin/conda' ]; then alias conda='/usr/local/miniconda3/bin/conda'; fi
-#end
+# added by Miniconda3 4.5.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/tobyhamand/miniconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/tobyhamand/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/tobyhamand/miniconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/tobyhamand/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+# add rabbitmqadmin to path
+export PATH="/usr/local/Cellar/rabbitmq/3.7.16/sbin:${PATH}"
+
+# set git config settings
+git config --global rebase.autoStash true
+
