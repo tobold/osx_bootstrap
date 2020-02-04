@@ -28,3 +28,4 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 
 ln -s ./.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+git config --global pull.rebase true
