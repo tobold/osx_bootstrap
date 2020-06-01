@@ -20,8 +20,7 @@ then
 fi
 
 if [ ! -x ~/.oh-my-zsh/plugins/zsh-autosuggestions ]
-then
-  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+then  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 fi
 
 if [ ! -x ~/.nvm ]
@@ -31,17 +30,11 @@ then
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 fi
 
-rm ~/.zshrc
-ln -s "$(pwd)/.zshrc" ~/.zshrc
-
-rm ~/.tetris_aliases
-ln -s "$(pwd)/.tetris_aliases" ~/.tetris_aliases
-
-rm ~/.ssh/config
-ln -s "$(pwd)/.sshconfig" ~/.ssh/config
+ln -sf "$(pwd)/.zshrc" ~/.zshrc
+ln -sf "$(pwd)/.tetris_aliases" ~/.tetris_aliases
+ln -sf "$(pwd)/.sshconfig" ~/.ssh/config
 
 #setup git ignore global and symlink
-rm ~/.gitignore_global
-ln -s "$(pwd)/.gitignore_global" ~/.gitignore_global
+ln -sf "$(pwd)/.gitignore_global" ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 git config --global pull.rebase true
