@@ -98,10 +98,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export TRIPTEASE_PROJECT_DIR=$HOME/Work/Triptease
-
-source ~/.tetris_aliases
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -128,3 +124,13 @@ export PATH="/usr/local/Cellar/rabbitmq/3.7.16/sbin:${PATH}"
 # set git config settings
 git config --global rebase.autoStash true
 
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/slss.zsh
