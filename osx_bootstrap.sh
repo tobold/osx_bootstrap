@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-set -e
+set +e
 
 if [ ! -x /usr/local/bin/brew ]
 then
     echo "Installing Homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
     echo "Homebrew already installed, checking for updates"
     brew update

@@ -2,7 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # add ssh key to keyring
+if [ -x ~/.ssh/id_rsa ]
+then
 ssh-add -K ~/.ssh/id_rsa
+else if [ -x ~/.ssh/id_ed25519 ]
+ssh-add -K ~/.ssh/id_ed25519
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
@@ -66,6 +71,7 @@ plugins=(
   zsh-autosuggestions
 )
 
+export ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
