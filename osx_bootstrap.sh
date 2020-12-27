@@ -38,3 +38,9 @@ ln -sf "$(pwd)/.sshconfig" ~/.ssh/config
 ln -sf "$(pwd)/.gitignore_global" ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 git config --global pull.rebase true
+
+echo --- Which email address are you using for git? ---
+read emailaddress
+
+git config --global user.name "Toby Hamand"
+git config --global user.email $emailaddress
