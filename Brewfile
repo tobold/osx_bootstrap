@@ -1,4 +1,5 @@
 tap "homebrew/cask"
+tap "versent/homebrew-taps"
 
 brew "git"
 brew "terraform"
@@ -9,6 +10,7 @@ brew "yarn"
 brew "vim"
 brew "blackbox"
 brew "docker"
+brew "saml2aws"
 
 cask '1password'
 cask 'discord'
