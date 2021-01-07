@@ -143,3 +143,6 @@ git config --global rebase.autoStash true
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/slss.zsh
+
+export AWS_PROFILE=cazoo
+export AWS_REGION=eu-west-1

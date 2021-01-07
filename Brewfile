@@ -13,6 +13,7 @@ brew "docker"
 brew "saml2aws"
 
 cask '1password'
+cask 'postman'
 cask 'discord'
 cask 'jetbrains-toolbox'
 cask 'docker'
