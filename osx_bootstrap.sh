@@ -23,11 +23,6 @@ if [ ! -x ~/.oh-my-zsh/plugins/zsh-autosuggestions ]
 then  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 fi
 
-if [ ! -x ~/.oh-my-zsh/plugins/zsh-better-npm-completion ]
-then git clone https://github.com/lukechilds/zsh-better-npm-completion ~/.oh-my-zsh/plugins/zsh-better-npm-completion
-fi
-
-
 if [ ! -x ~/.nvm ]
 then
   echo "Installing NVM"

@@ -19,7 +19,6 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
   git
-  zsh-better-npm-completion
   zsh-autosuggestions
 )
 
