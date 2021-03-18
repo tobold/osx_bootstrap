@@ -17,9 +17,6 @@ export ZSH=/Users/$USER/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-# install better npm completion plugin
-if [ -f '/Users/tobyhamand/.oh-my-zsh/custom/plugins/zsh-better-npm-completion' ]; then git clone https://github.com/lukechilds/zsh-better-npm-completion ~/.oh-my-zsh/custom/plugins/zsh-better-npm-completion; fi
-
 plugins=(
   git
   zsh-better-npm-completion
