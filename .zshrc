@@ -2,6 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # add ssh key to keyring
+ssh-add --apple-use-keychain ~/.ssh/id_rsa
+#
 if [ -x ~/.ssh/id_rsa ]
 then
 ssh-add --apple-use-keychain ~/.ssh/id_rsa

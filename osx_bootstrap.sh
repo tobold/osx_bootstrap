@@ -27,12 +27,12 @@ if [ ! -x ~/.nvm ]
 then
   echo "Installing NVM"
   mkdir ~/.nvm
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.39.1/install.sh | bash
 fi
 
 ln -sf "$(pwd)/.zshrc" ~/.zshrc
 ln -sf "$(pwd)/.tetris_aliases" ~/.tetris_aliases
-ln -sf "$(pwd)/.sshconfig" ~/.ssh/config
+ln -sf "$(pwd)/sshconfig" ~/.ssh/config
 
 #setup git ignore global and symlink
 ln -sf "$(pwd)/.gitignore_global" ~/.gitignore_global
