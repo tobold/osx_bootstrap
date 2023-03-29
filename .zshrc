@@ -1,9 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# add ssh key to keyring
-ssh-add --apple-use-keychain ~/.ssh/id_rsa
-#
 if [ -x ~/.ssh/id_rsa ]
 then
 ssh-add --apple-use-keychain ~/.ssh/id_rsa
@@ -67,15 +63,3 @@ if [ -f '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc' ]; then source '/Users
 # set git config settings
 git config --global rebase.autoStash true
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/toby/Work/trint-backend/node_modules/tabtab/.completions/slss.zsh
-
-export AWS_PROFILE=cazoo
-export AWS_REGION=eu-west-1
