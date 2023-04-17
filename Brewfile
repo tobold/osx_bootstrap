@@ -1,6 +1,8 @@
 tap "homebrew/cask"
 tap "versent/homebrew-taps"
 
+brew "nvm"
+brew "docker"
 brew "git"
 brew "terraform"
 brew "zsh"
