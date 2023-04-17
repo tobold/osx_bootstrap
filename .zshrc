@@ -63,3 +63,5 @@ if [ -f '/Users/tobyhamand/google-cloud-sdk/path.zsh.inc' ]; then source '/Users
 # set git config settings
 git config --global rebase.autoStash true
 
+# Add an alias to automate stopping Zscaler before running yarn
+alias yarnz="sudo launchctl unload /Library/LaunchDaemons/com.zscaler.service.plist && sudo launchctl unload /Library/LaunchDaemons/com.zscaler.tunnel.plist && yarn && sudo launchctl load /Library/LaunchDaemons/com.zscaler.service.plist && sudo launchctl load /Library/LaunchDaemons/com.zscaler.tunnel.plist"
