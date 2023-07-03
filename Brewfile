@@ -9,6 +9,7 @@ brew "zsh"
 brew "httpie"
 brew "yarn"
 brew "vim"
+brew "fig"
 
 cask '1password'
 cask 'postman'
